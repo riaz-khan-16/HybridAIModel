@@ -1,0 +1,63 @@
+To update your repository, follow these steps:
+
+                        git branch
+                        git checkout <branch-name>
+
+Make sure you are on the branch you want to update.
+You can use the 'git branch' command to check which branch you are currently on,
+and the 'git checkout <branch-name>' command to switch to a different branch if necessary.
+
+                                git add .
+                                or 
+                                git add <file-name>
+
+
+
+Use 'git add .' to stage all the changes you want to commit. 
+Alternatively, you can use 'git add <file-name>' to stage specific files.
+
+
+
+                       git commit -m "commit message"
+
+
+
+Use 'git commit -m "commit message"' to commit the changes.
+ Replace "commit message" with a brief description of the changes you made.
+
+                           
+                           git pull origin main --rebas
+
+
+
+Use 'git pull origin main --rebase' to fetch the latest changes from the remote repository and
+ apply them to your local repository. 
+ The --rebase option is used to incorporate your local changes into the updated history of the branch.
+
+If there are any conflicts during the rebase process, resolve them by editing the affected files,
+ using git add <file-name> to stage the resolved changes, and continuing the rebase process with 
+ git rebase --continue.
+
+
+                           git push origin <branch-name>
+
+Use git push origin <branch-name> to push your changes to the remote repository.
+ Replace <branch-name> with the name of the branch you want to push to.
+
+After you have pushed your changes, 
+your remote repository should be updated with your latest changes.
+
+
+
+
+
+
+
+
+
+git log
+git reflog
+git checkout ac92a6a
+git checkout -b branch_1
+git show ac92a6a
+git checkout ac92a6a .
