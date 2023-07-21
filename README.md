@@ -1,5 +1,5 @@
 
-"# Autoencoders ML_Classifier Hybrid Machine Learning Model" 
+# Autoencoders ML_Classifier Hybrid Machine Learning Model
 
 This section provides the outcomes of using machine learning models to categorize transformers into excellent, good, medium, bad, or extremely poor categories. SVM, Logistic Regression, Decision Tree, and Random Forest classifiers are trained with the dataset for this purpose. The ML classifier has low classification performance due to a large number of input characteristics (31) and the limited amount of data (607) used. Dimension reduction is required to solve this issue. Therefore, feature extraction and dataset compression are both done using autoencoders. The autoencoder produces a compressed dataset, which is then used by ML classifiers for classification. This section details the performance of various model types, environment setup, and dataset preparation.
 
@@ -11,7 +11,7 @@ The class of transformer is determined using 32 input parameters. Ten different 
 ![image](https://github.com/riaz-khan-16/Autoencoders_with_ML_Classifier/assets/63443462/9c18e2d5-6557-4399-b69a-52bebf15e1f9)
 
 
-**Environment Setup**
+###Environment Setup
 
 In this experiment total of 8 models are implemented and evaluated. In the algorithmic implementation, the Google Colaboratory software package has been used with the necessary modification and extension. In the experiment, the original database of 607 records is randomly split into two parts of a training dataset and a testing dataset for validating the classification accuracy of the above eight algorithms, where 70% of samples of the original dataset are considered for the training dataset and the remaining 30% for the testing dataset. It is worth pointing out that the data is scaled to [-1, 1] interval before running any algorithm. The above dataset split, cross-validation, and testing will be repeated 100 times for every algorithm.
 
@@ -20,7 +20,7 @@ In this experiment total of 8 models are implemented and evaluated. In the algor
 
 
 
-Implementing ML Classifier in the compressed dataset
+###Implementing ML Classifier in the compressed dataset
 
 The machine learning classifiers' classification outcomes weren't adequate for the task. However, because a transformer is a crucial component in the transmission and conversion of electricity, it is required to forecast the real class of a transformer. Therefore, feature extraction was carried out using various autoencoder types in order to produce reliable prediction results, and the new dataset that was mentioned in the previous study was developed. . The compressed dataset was then classified using machine learning classifiers. As a consequence, integrated models are developed, and these models produce excellent classification outcomes. Figure [] displays each autoencoder's representation of the classification results using a confusion matrix for the logistic regression classifier. The combined MLPA/Logistic Regression model produces the best results overall in terms of classification accuracy. The classification accuracy of the combined model made with MLPA and Logistic Regression gives the best results among all the models.
 
